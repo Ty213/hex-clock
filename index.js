@@ -18,3 +18,25 @@
 // The time is in digital format to resemble a hex code
 // The time is displayed centered in the middle of the screen
 // The screen background color changes based on the current time
+
+
+
+update();
+setInterval(update, 1000);
+
+function update() {
+	let hour = document.querySelector('.clock__hour');
+	let minute = document.querySelector('.clock__minute');
+	let second = document.querySelector('.clock__second');
+	let clock = document.querySelector('.clock');
+	let d = new Date();
+	let color = "#" + d.getHours() + d.getMinutes() + d.getSeconds();
+	console.log(color);
+
+ 	hour.innerHTML = d.getHours();
+	minute.innerHTML = d.getMinutes();
+	second.innerHTML = d.getSeconds();
+
+	clock.style.backgroundColor = color;
+
+}

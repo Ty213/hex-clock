@@ -1,6 +1,21 @@
+.wrapper {
+	height: 90vh;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
 .clock {
 	display: flex;
+	justify-content: center;
+  	align-items: center;
+	width: 40vw;
+	height: 30vh;
+	border: 2px solid;
+	background: black;
 }
 .clock__text {
+	color: white;
 	font-size: 4em;
+	font-family: 'Abril Fatface', 'Arial';
+	padding: 10px;
 }
