@@ -1,4 +1,4 @@
-update();
+update(); //inital update when page loads
 setInterval(update, 1000);
 
 function update() {

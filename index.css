@@ -21,71 +21,71 @@
 }
 
 @media screen and (max-width: 968px) {
-.clock {
-	display: flex;
-	justify-content: center;
-  	align-items: center;
-	width: 50vw;
-	height: 20vh;
-	border: 2px solid;
-	background: black;
-}
-.clock__text {
-	color: white;
-	font-size: 4em;
-	font-family: 'Abril Fatface', 'Arial';
-	padding: 10px;
-}
+	.clock {
+		display: flex;
+		justify-content: center;
+	  	align-items: center;
+		width: 50vw;
+		height: 20vh;
+		border: 2px solid;
+		background: black;
+	}
+	.clock__text {
+		color: white;
+		font-size: 4em;
+		font-family: 'Abril Fatface', 'Arial';
+		padding: 10px;
+	}
 }
 @media screen and (max-width: 612px) {
-.clock {
-	display: flex;
-	justify-content: center;
-  	align-items: center;
-	width: 50vw;
-	height: 20vh;
-	border: 2px solid;
-	background: black;
-}
-.clock__text {
-	color: white;
-	font-size: 3em;
-	font-family: 'Abril Fatface', 'Arial';
-	padding: 10px;
-}
+	.clock {
+		display: flex;
+		justify-content: center;
+	  	align-items: center;
+		width: 50vw;
+		height: 20vh;
+		border: 2px solid;
+		background: black;
+	}
+	.clock__text {
+		color: white;
+		font-size: 3em;
+		font-family: 'Abril Fatface', 'Arial';
+		padding: 10px;
+	}
 }
 @media screen and (max-width: 481px) {
-.clock {
-	display: flex;
-	justify-content: center;
-  	align-items: center;
-	width: 60vw;
-	height: 15vh;
-	border: 2px solid;
-	background: black;
-}
-.clock__text {
-	color: white;
-	font-size: 3em;
-	font-family: 'Abril Fatface', 'Arial';
-	padding: 10px;
-}
+	.clock {
+		display: flex;
+		justify-content: center;
+	  	align-items: center;
+		width: 60vw;
+		height: 15vh;
+		border: 2px solid;
+		background: black;
+	}
+	.clock__text {
+		color: white;
+		font-size: 3em;
+		font-family: 'Abril Fatface', 'Arial';
+		padding: 10px;
+	}
 }
 @media screen and (max-width: 400px) {
-.clock {
-	display: flex;
-	justify-content: center;
-  	align-items: center;
-	width: 60vw;
-	height: 15vh;
-	border: 2px solid;
-	background: black;
-}
-.clock__text {
-	color: white;
-	font-size: 2em;
-	font-family: 'Abril Fatface', 'Arial';
-	padding: 10px;
-}
+	.clock {
+		display: flex;
+		justify-content: center;
+	  	align-items: center;
+		width: 60vw;
+		height: 15vh;
+		border: 2px solid;
+		background: black;
+	}
+	.clock__text {
+		color: white;
+		font-size: 2em;
+		font-family: 'Abril Fatface', 'Arial';
+		padding: 10px;
+	}
 }
 
