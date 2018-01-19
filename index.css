@@ -1,0 +1,6 @@
+.clock {
+	display: flex;
+}
+.clock__text {
+	font-size: 4em;
+}
