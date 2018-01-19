@@ -1,11 +1,35 @@
-// For this assignment you will be creating a digital clock using HTML, CSS and JavaScript.
-//  The finished product will be fully functional, styled and ready to show off to friends!
+update();
+setInterval(update, 1000);
 
-// Note: You will choose one of the two different options below to complete this assignment.
-// Details for each are below.
-//  Remember whichever you don’t do now you can return to later as a fun side project!
+function update() {
+	let hour = document.querySelector('.clock__hour');
+	let minute = document.querySelector('.clock__minute');
+	let second = document.querySelector('.clock__second');
+	let clock = document.querySelector('.clock');
+	let d = new Date();
+	let color = "#" + d.getHours() + d.getMinutes() + d.getSeconds();
+	
+	if(d.getHours() > 12) {
+		hour.innerHTML = d.getHours() - 12 + " :";
+	}else {
+		hour.innerHTML = d.getHours() + " :";
+	}
 
-// Hint: This assignment is to gain the skills needed for development, do NOT submit copied code.
+	if(d.getMinutes() <= 9) {
+		minute.innerHTML = "0" + d.getMinutes() + " :";
+	}else {
+		minute.innerHTML = d.getMinutes() + " :";
+	}
+
+	if(d.getSeconds() <= 9) {
+		second.innerHTML = "0" + d.getSeconds();
+	}else {
+		second.innerHTML = d.getSeconds();
+	}
+
+	clock.style.backgroundColor = color;
+
+}
 
 // Option 1:
 
@@ -20,23 +44,3 @@
 // The screen background color changes based on the current time
 
 
-
-update();
-setInterval(update, 1000);
-
-function update() {
-	let hour = document.querySelector('.clock__hour');
-	let minute = document.querySelector('.clock__minute');
-	let second = document.querySelector('.clock__second');
-	let clock = document.querySelector('.clock');
-	let d = new Date();
-	let color = "#" + d.getHours() + d.getMinutes() + d.getSeconds();
-	console.log(color);
-
- 	hour.innerHTML = d.getHours();
-	minute.innerHTML = d.getMinutes();
-	second.innerHTML = d.getSeconds();
-
-	clock.style.backgroundColor = color;
-
-}
