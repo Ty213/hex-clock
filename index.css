@@ -1,91 +1,37 @@
-.wrapper {
-	height: 90vh;
-	display: flex;
-  	justify-content: center;
-  	align-items: center;
+body {
+	font-size: 100%;
 }
-.clock {
-	display: flex;
-	justify-content: center;
-  	align-items: center;
-	width: 40vw;
-	height: 30vh;
-	border: 2px solid;
-	background: black;
+.img {
+	z-index: -1;
+	background: url('img/NYC.jpg');
+	background-size: cover;
+	position: relative;
+	background color: #324kfs;
+	height: 80vh;
+	width: 35vw;
+}
+.img__overlay {
+	z-index: -10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 80vh;
+	width: 35vw;
 }
 .clock__text {
+	z-index: 30;
 	color: white;
-	font-size: 5em;
-	font-family: 'Abril Fatface', 'Arial';
-	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10em;
 }
-
-@media screen and (max-width: 968px) {
-	.clock {
-		display: flex;
-		justify-content: center;
-	  	align-items: center;
-		width: 50vw;
-		height: 20vh;
-		border: 2px solid;
-		background: black;
-	}
-	.clock__text {
-		color: white;
-		font-size: 4em;
-		font-family: 'Abril Fatface', 'Arial';
-		padding: 10px;
-	}
+.clock__hour {
+	font-size: 11em ;
 }
-@media screen and (max-width: 612px) {
-	.clock {
-		display: flex;
-		justify-content: center;
-	  	align-items: center;
-		width: 50vw;
-		height: 20vh;
-		border: 2px solid;
-		background: black;
-	}
-	.clock__text {
-		color: white;
-		font-size: 3em;
-		font-family: 'Abril Fatface', 'Arial';
-		padding: 10px;
-	}
+.clock__minute {
+	font-size: 6em;
+	text-align: right;
 }
-@media screen and (max-width: 481px) {
-	.clock {
-		display: flex;
-		justify-content: center;
-	  	align-items: center;
-		width: 60vw;
-		height: 15vh;
-		border: 2px solid;
-		background: black;
-	}
-	.clock__text {
-		color: white;
-		font-size: 3em;
-		font-family: 'Abril Fatface', 'Arial';
-		padding: 10px;
-	}
+.clock__second {
+	font-size: 3em;
+	text-align: right;
 }
-@media screen and (max-width: 400px) {
-	.clock {
-		display: flex;
-		justify-content: center;
-	  	align-items: center;
-		width: 60vw;
-		height: 15vh;
-		border: 2px solid;
-		background: black;
-	}
-	.clock__text {
-		color: white;
-		font-size: 2em;
-		font-family: 'Abril Fatface', 'Arial';
-		padding: 10px;
-	}
-}
-

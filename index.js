@@ -6,19 +6,21 @@ function update() {
 	let minute = document.querySelector('.clock__minute');
 	let second = document.querySelector('.clock__second');
 	let clock = document.querySelector('.clock');
+	let overlay = document.querySelector('.img__overlay');
 	let d = new Date();
-	let color = "#" + d.getHours() + d.getMinutes() + d.getSeconds();
+	// let color = "rgba(" + d.getHours() + "," + d.getMinutes() + "," d.getSeconds() + ",0.5)";
+	let color = 'rgba(' + d.getHours() + ',' + d.getMinutes() + ',' + d.getSeconds() + ',' + '0.4)';
 	
 	if(d.getHours() > 12) {
-		hour.innerHTML = d.getHours() - 12 + " :";
+		hour.innerHTML = d.getHours() - 12;
 	}else {
-		hour.innerHTML = d.getHours() + " :";
+		hour.innerHTML = d.getHours();
 	}
 
 	if(d.getMinutes() <= 9) {
-		minute.innerHTML = "0" + d.getMinutes() + " :";
+		minute.innerHTML = "0" + d.getMinutes();
 	}else {
-		minute.innerHTML = d.getMinutes() + " :";
+		minute.innerHTML = d.getMinutes();
 	}
 
 	if(d.getSeconds() <= 9) {
@@ -27,7 +29,7 @@ function update() {
 		second.innerHTML = d.getSeconds();
 	}
 
-	clock.style.backgroundColor = color;
+	overlay.style.backgroundColor = color;
 
 }
 
