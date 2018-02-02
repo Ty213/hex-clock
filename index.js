@@ -9,7 +9,7 @@ function update() {
 	let overlay = document.querySelector('.img__overlay');
 	let d = new Date();
 	// let color = "rgba(" + d.getHours() + "," + d.getMinutes() + "," d.getSeconds() + ",0.5)";
-	let color = 'rgba(' + d.getHours() + ',' + d.getMinutes() + ',' + d.getSeconds() + ',' + '0.4)';
+	let color = 'rgba(' + d.getHours() + ',' + d.getMinutes() + ',' + d.getSeconds() + ',' + '0.7)';
 	
 	if(d.getHours() > 12) {
 		hour.innerHTML = d.getHours() - 12;
